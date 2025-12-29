@@ -1,4 +1,5 @@
 import { Briefcase, Code, User } from "lucide-react";
+import { Link } from "react-router-dom";
 import resumePDF from "../assets/Resume_PreetiChandaPatra.pdf";
 import myPhoto from "../assets/my_photo.jpg";
 
@@ -34,9 +35,9 @@ export const AboutSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-3">
-              <a href="#contact" className="cosmic-button">
+              <Link to="/contact" className="cosmic-button">
                 Get In Touch
-              </a>
+              </Link>
 
               <a
                 href={resumePDF}

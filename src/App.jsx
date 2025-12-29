@@ -9,7 +9,12 @@ function App() {
       <Toaster />
       <HashRouter>
         <Routes>
-          <Route index element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<Home />} />
+          <Route path="/internships" element={<Home />} />
+          <Route path="/skills" element={<Home />} />
+          <Route path="/projects" element={<Home />} />
+          <Route path="/contact" element={<Home />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </HashRouter>
