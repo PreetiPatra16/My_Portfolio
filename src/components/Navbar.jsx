@@ -24,6 +24,22 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
+    const element = document.querySelector(targetId);
+    if (element) {
+      const headerOffset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav
       className={cn(
@@ -37,8 +53,9 @@ export const Navbar = () => {
         {/* Logo */}
         <a
           href="#hero"
+          onClick={(e) => handleNavClick(e, "#hero")}
           className={cn(
-            "text-xl font-bold flex items-center transition-colors duration-300",
+            "text-xl font-bold flex items-center transition-colors duration-300 cursor-pointer",
             isScrolled ? "text-white" : "text-foreground"
           )}
         >
@@ -52,8 +69,9 @@ export const Navbar = () => {
             <a
               key={item.name}
               href={item.href}
+              onClick={(e) => handleNavClick(e, item.href)}
               className={cn(
-                "transition-colors duration-300",
+                "transition-colors duration-300 cursor-pointer",
                 isScrolled
                   ? "text-white/80 hover:text-primary"
                   : "text-foreground/80 hover:text-primary"
@@ -91,8 +109,8 @@ export const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-white hover:text-primary transition-colors duration-300"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => handleNavClick(e, item.href)}
+                className="text-white hover:text-primary transition-colors duration-300 cursor-pointer"
               >
                 {item.name}
               </a>
