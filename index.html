@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/My_Portfolio/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preeti's Portfolio</title>
+
+  <!-- ✅ SINGLE SOURCE: force dark if nothing saved -->
+  <script>
+    const theme = localStorage.getItem("theme");
+    if (theme !== "light") {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    }
+  </script>
+  <script type="module" crossorigin src="/My_Portfolio/assets/index-Vw0_Fur8.js"></script>
+  <link rel="stylesheet" crossorigin href="/My_Portfolio/assets/index-GXHSmuWH.css">
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+</html>
