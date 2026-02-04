@@ -25,16 +25,7 @@ This repository contains my personal portfolio website, created to present my te
 - Clean and recruiter-friendly layout  
 - Project-focused presentation  
 - Responsive design for desktop and mobile  
-- Deployed and publicly accessible  
-
----
-
-## Technologies Used
-
-- HTML5  
-- CSS3  
-- JavaScript  
-- GitHub Pages  
+- Deployed and publicly accessible    
 
 ---
 
