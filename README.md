@@ -1,70 +1,59 @@
-Preeti Patra | Portfolio Website
+# Preeti Patra | Portfolio Website
 
-🔗 Live Portfolio:
+🔗 **Live Portfolio:**  
 👉 https://PreetiPatra16.github.io/My_Portfolio/
+
+---
+
+## Overview
 
 This repository contains my personal portfolio website, created to present my technical skills, projects, internships, and professional background in a clear and structured way for recruiters and hiring teams.
 
-Overview
+---
 
-The portfolio serves as a single point of reference to:
+## What This Portfolio Shows
 
-Understand my technical background
+- Technical background and core skills  
+- Selected academic and personal projects  
+- Internship and practical experience  
+- Quick access to professional contact details  
 
-Review selected projects
+---
 
-Get an overview of my skills and experience
+## Key Highlights
 
-Find my contact details quickly
+- Clean and recruiter-friendly layout  
+- Project-focused presentation  
+- Responsive design for desktop and mobile  
+- Deployed and publicly accessible  
 
-Key Highlights
+---
 
-Clean and minimal UI
+## Technologies Used
 
-Easy navigation for recruiters
+- HTML5  
+- CSS3  
+- JavaScript  
+- GitHub Pages  
 
-Project-focused presentation
+---
 
-Mobile and desktop responsive
+## Deployment
 
-Deployed and publicly accessible
+This portfolio website is deployed using **GitHub Pages** and can be accessed at the live link above.
 
-Technologies Used
+---
 
-HTML5 – structure
+## Repository Structure
 
-CSS3 – styling and layout
+---
 
-JavaScript – interactivity
+## Purpose
 
-GitHub Pages – hosting and deployment
+The purpose of this project is to maintain a professional online presence and provide recruiters with a single place to review my work, skills, and experience.
 
-Deployment
+---
 
-The website is deployed using GitHub Pages.
+## Contact
 
-Live URL:
-https://PreetiPatra16.github.io/My_Portfolio/
-
-Repository Structure
-My_Portfolio/
-├── index.html
-├── style.css
-├── script.js
-├── assets/
-│   └── images
-└── README.md
-Intended Audience
-
-Recruiters
-
-Hiring managers
-
-Interviewers
-
-Technical collaborators
-
-Contact
-
-All contact details are available on the portfolio website.
-For professional inquiries, please reach out through the listed channels.
+All professional contact details are available on the portfolio website.
