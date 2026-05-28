@@ -190,6 +190,32 @@
   }
 }
 
+@layer utilities {
+  :not(.dark) .text-white,
+  :not(.dark) [class*="text-white/"] {
+    color: hsl(var(--foreground));
+  }
+
+  html:not(.dark) .bg-black\/40 .text-primary,
+  html:not(.dark) .bg-black\/50 .text-primary,
+  html:not(.dark) .bg-black\/60 .text-primary,
+  html:not(.dark) .bg-black\/70 .text-primary,
+  html:not(.dark) .bg-black\/80 .text-primary,
+  html:not(.dark) .bg-black .text-primary {
+    color: white !important;
+  }
+
+  html:not(.dark) .bg-black\/40 [class*="text-white"],
+  html:not(.dark) .bg-black\/50 [class*="text-white"],
+  html:not(.dark) .bg-black\/60 [class*="text-white"],
+  html:not(.dark) .bg-black\/70 [class*="text-white"],
+  html:not(.dark) .bg-black\/80 [class*="text-white"],
+  html:not(.dark) .bg-black [class*="text-white"],
+  html:not(.dark) [class*="bg-[#09090f]/95"] [class*="text-white"] {
+    color: white !important;
+  }
+}
+
 .light-gradient-bg {
   background: radial-gradient(
       circle at 20% 20%,
